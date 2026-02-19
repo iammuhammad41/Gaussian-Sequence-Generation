@@ -1,9 +1,6 @@
 # Object-Oriented Programming Technology Program Design Report  
 ## Title: Gaussian Sequence Generation
 
-**Name:** Muhammad Altaf  
-**Department:** Information and Communication Engineering  
-**Student ID:** 12009030  
 
 ### 1. Problem Analysis  
 In scientific research, we often encounter issues related to data processing. The topic chosen for this assignment is Gaussian random distribution sequences and their statistical properties. Gaussian noise is a very common type of noise used in algorithm design and simulation processes to simulate environmental or process noise. Noise refers to voltage or current in circuits or systems that does not carry any useful information. In industry and nature, there are various sources of interference (noise sources), such as the connection of high-power electronic devices, the switching on and off of large power-consuming equipment, and lightning strikes. These sources cause orderly or disorderly changes in the electric and magnetic fields in space, and all these are interference sources (or noise sources). Gaussian noise refers to a type of noise whose probability density function follows a Gaussian (normal) distribution. If a noise’s amplitude distribution follows a Gaussian distribution and its power spectral density is uniformly distributed, it is called Gaussian white noise. Gaussian white noise has an uncorrelated second moment and a constant first moment, referring to the time correlation of the signal. This assignment aims to implement the generation and visualization of Gaussian sequences, primarily including the generation of probability density functions and autocorrelation functions.
