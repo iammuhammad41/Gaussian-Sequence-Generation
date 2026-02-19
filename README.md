@@ -1,9 +1,8 @@
-````markdown
 # Object-Oriented Programming Technology Program Design Report  
 ## Title: Gaussian Sequence Generation
 
-**Name:** Muhammad Altaf 
-**Department:** Information and Communication Engineering 
+**Name:** Muhammad Altaf  
+**Department:** Information and Communication Engineering  
 **Student ID:** 12009030  
 
 ### 1. Problem Analysis  
@@ -29,6 +28,33 @@ The mean and variance of a Gaussian sequence are defined as:
 \]
 
 Where \(n\) represents the number of points in the Gaussian sequence.
+
+### 3. Solution Design  
+#### 1. Program Flow  
+(Insert flowchart here)
+
+#### 2. Specific Implementation  
+The experiment uses multithreading to implement the Gaussian sequence generation. The program reads user input data (or uses default values if no input is provided), generates a Gaussian random distribution sequence based on the input data, and plots the autocorrelation function and probability density function based on the generated sample points. The user can set the refresh rate per second to control the frequency of the image refresh display. During program execution, the user can pause the program using the "Pause" button or stop it using the "Stop" button.
+
+### 4. Programming Implementation  
+#### 1. Programming Environment  
+The software environment used for this experiment is Visual Studio 2019 Community on Windows 10, and the third-party library used is the compiled VTK library.
+
+#### 2. Code Implementation  
+1) **Generate Sample Points:**
+
+```cpp
+void GenData(vector<double>& data, int len, const double mean, const double stddev) {
+    std::default_random_engine generator;
+    std::normal_distribution<double> dist(mean, stddev);
+
+    data.clear();
+    for (int i = 0; i < len; i++) {
+        double d = dist(generator);
+        data.push_back(d);
+    }
+}
+
 
 ### 3. Solution Design  
 #### 1. Program Flow  
